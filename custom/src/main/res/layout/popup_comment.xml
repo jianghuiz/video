@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rela_tive"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/screen"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" />
+<ScrollView
+    android:id="@+id/screen"
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_height="60dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/liea_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         >
+
+
+            <LinearLayout
+                android:id="@+id/liea_tive"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/em_margin_15"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/em_live_chat_item_bg_s"
+                android:layout_marginRight="60dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/image_message"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/em_margin_15"
+                    android:background="@mipmap/mess_age"
+                     />
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/em_margin_20"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/em_margin_25"
+                    android:layout_marginRight="@dimen/em_margin_10"
+                    android:background="@color/white" />
+                <EditText
+                    android:id="@+id/edt_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:layout_toRightOf="@+id/image_message"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/em_margin_5"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/em_margin_5"
+                    android:background="@null"
+                    android:focusable="true"
+                    android:hint=""
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/image_cancel"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/em_margin_30"
+                    android:src="@mipmap/cancel"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/comment_images"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/em_margin_10"
+                android:background="@drawable/em_live_button_bg_shape"
+                android:padding="5dp"
+                android:src="@mipmap/em_live_send" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

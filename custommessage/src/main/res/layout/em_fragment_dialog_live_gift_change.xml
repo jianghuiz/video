@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:minHeight="240dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/em_bg_full_white"
+    android:layout_marginTop="50dp">
+
+    <TextView
+        android:id="@+id/tv_gift_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="6dp"
+        android:text="送花给老师"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_ouser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="@dimen/em_margin_15"
+        android:text="当前拥有："
+        android:textSize="@dimen/em_size_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/text_ouser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072">
+
+        <TextView
+            android:id="@+id/em_live_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:textColor="@color/em_chat_bg"
+            android:textSize="@dimen/em_margin_15"
+            android:textStyle="bold"
+            tools:text="28" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/em_margin_5"
+            android:layout_marginTop="35dp"
+            android:text="束"
+            android:textSize="@dimen/em_size_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/text_ouser"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.075" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/em_live_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginLeft="@dimen/em_margin_10"
+        android:layout_marginRight="@dimen/em_margin_10"
+        android:layout_marginBottom="@dimen/em_margin_10"
+        app:layout_constraintBottom_toBottomOf="@+id/text_ouser"
+        app:layout_constraintBottom_toTopOf="@+id/em_gift_confirm_send"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_ouser"
+        app:layout_constraintVertical_bias="0.06999999" />
+
+    <EditText
+        android:id="@+id/em_dialog_edit_content"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:background="@drawable/em_bg_full_grey"
+        android:hint="自定义输入"
+        android:paddingLeft="@dimen/em_margin_10"
+        android:maxLength="3"
+        android:numeric="integer"
+        android:textSize="@dimen/em_size_small"
+        app:layout_constraintBottom_toBottomOf="@+id/em_live_recyclerview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+
+    <TextView
+        android:id="@+id/text_view_su"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/em_size_small"
+        app:layout_constraintBottom_toBottomOf="@+id/em_dialog_edit_content"
+        app:layout_constraintEnd_toEndOf="@+id/em_dialog_edit_content"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        android:text="束" />
+
+
+    <TextView
+        android:id="@+id/em_item_gift_rule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="(1束花=1元)"
+        android:textSize="@dimen/em_size_small"
+        app:layout_constraintBottom_toBottomOf="@+id/text_view_su"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_view_su"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/em_gift_confirm_send"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/em_margin_30"
+        android:background="@color/em_live_gift_dialog"
+        android:gravity="center"
+        android:text="确定送出"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/text_ouser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/em_margin_20"
+        android:background="@mipmap/flower"
+        app:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

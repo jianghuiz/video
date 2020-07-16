@@ -1,0 +1,2 @@
+include ':app', ':custommessage', ':qiniu_sdk'
+rootProject.name='njndwapp'

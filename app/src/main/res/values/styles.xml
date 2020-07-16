@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+<!--    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="android:textColor">#000000</item>-->
+<!--    </style>-->
+
+    <style name="ThemeMain" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowAnimationStyle">@style/fade</item>
+    </style>
+
+    <style name="ThemeLauncher" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@mipmap/launcher</item>
+        <item name="android:windowAnimationStyle">@style/fade</item>
+    </style>
+
+    <style name="fade" parent="@android:style/Animation.Activity">
+<!--        <item name="android:activityOpenEnterAnimation">@anim/fade_in</item>-->
+<!--        <item name="android:activityOpenExitAnimation">@anim/fade_out</item>-->
+<!--        <item name="android:activityCloseEnterAnimation">@anim/fade_in</item>-->
+<!--        <item name="android:activityCloseExitAnimation">@anim/fade_out</item>-->
+    </style>
+        <style name="popup_window_anim">
+        <item name="android:windowEnterAnimation">@anim/popup_window_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_window_hide</item>
+    </style>
+</resources>

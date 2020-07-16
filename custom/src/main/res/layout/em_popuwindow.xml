@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rela_tive"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/liea_bottom"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/liea_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:background="#f2f2f2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@mipmap/rectangle">
+
+            <RelativeLayout
+                android:id="@+id/liea_tive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/em_margin_10"
+                android:layout_marginRight="@dimen/em_margin_30"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/em_margin_10"
+                    android:layout_marginTop="3dp"
+                    android:background="#f7f7f7"
+                    android:focusable="true"
+                    android:hint="输入评论内容"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:paddingLeft="10dp"
+                    android:textColor="#333333"
+                    android:textColorHint="#999999"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/image_cancel"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/em_margin_30"
+                    android:src="@mipmap/cancel"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="6dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:text="发表"
+                android:textColor="#D2B397"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

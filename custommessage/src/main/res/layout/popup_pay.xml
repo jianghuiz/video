@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rela_tive"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rela_bottom"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:id="@+id/rela_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+         >
+
+
+                <TextView
+                    android:id="@+id/text_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/em_margin_25"
+                    android:layout_marginRight="@dimen/em_margin_10"
+                    android:text="123123"
+                />
+
+                <ImageView
+                    android:id="@+id/image_cancel"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/em_margin_20"
+                    android:src="@mipmap/cancel"
+                    />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            >
+
+
+            <TextView
+                android:id="@+id/text_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/em_margin_25"
+                android:layout_marginRight="@dimen/em_margin_10"
+                android:text="￥0.01"
+                android:textColor="@android:color/holo_red_dark"
+                />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/em_margin_25"
+            android:layout_marginRight="@dimen/em_margin_10"
+            android:text="支付方式"
+            />
+
+
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/popop_pay_yue"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/em_margin_25"
+            >
+<ImageView
+    android:id="@+id/image_mesg_d"
+    android:layout_width="@dimen/em_margin_25"
+    android:layout_height="@dimen/em_margin_25"
+    android:layout_centerVertical="true"
+    android:background="@mipmap/pop_money"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/image_mesg_d"
+                android:layout_marginLeft="@dimen/em_margin_10"
+                android:textColor="@color/black"
+                android:layout_marginRight="@dimen/em_margin_10"
+                android:text="余额支付"
+                />
+
+            <ImageView
+                android:id="@+id/image_click_change_w"
+                android:layout_width="@dimen/em_margin_25"
+                android:layout_height="@dimen/em_margin_25"
+                android:layout_marginRight="@dimen/em_margin_25"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/pop_cick_icon"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/popop_pay_weix"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/em_margin_25"
+            >
+            <ImageView
+                android:id="@+id/image_mesg_chat"
+                android:layout_width="@dimen/em_margin_25"
+                android:layout_height="@dimen/em_margin_25"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/wei_chat"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/image_mesg_chat"
+                android:layout_marginLeft="@dimen/em_margin_10"
+                android:textColor="@color/black"
+                android:layout_marginRight="@dimen/em_margin_10"
+                android:text="微信支付"
+                />
+
+            <ImageView
+                android:id="@+id/image_click_change_chat"
+                android:layout_width="@dimen/em_margin_25"
+                android:layout_height="@dimen/em_margin_25"
+                android:layout_marginRight="@dimen/em_margin_25"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/pop_money_x"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/popop_pay_api"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="@dimen/em_margin_10"
+            android:layout_marginLeft="@dimen/em_margin_25"
+            >
+            <ImageView
+                android:id="@+id/image_mesg"
+                android:layout_width="@dimen/em_margin_25"
+                android:layout_height="@dimen/em_margin_25"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/alipay"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/image_mesg"
+                android:layout_marginLeft="@dimen/em_margin_10"
+                android:textColor="@color/black"
+                android:layout_marginRight="@dimen/em_margin_10"
+                android:text="支付宝支付"
+                />
+
+            <ImageView
+                android:id="@+id/image_click_change"
+                android:layout_width="@dimen/em_margin_25"
+                android:layout_height="@dimen/em_margin_25"
+                android:layout_marginRight="@dimen/em_margin_25"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/pop_money_x"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/confirm_pay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0153b9"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/em_margin_10"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/em_margin_20"
+                android:layout_marginRight="@dimen/em_margin_10"
+                android:text="确认购买"
+                />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
